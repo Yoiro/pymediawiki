@@ -104,7 +104,6 @@ class MediaWiki(object):
                         proxies=self.proxies,
                         data=data
                 )
-                print(req.text)
             else:
                 raise AuthenticationError()
         except (ConnectionError, ValueError) as e:
